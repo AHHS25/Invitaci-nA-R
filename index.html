@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#651F30">
+  <meta name="description" content="Nuestra boda: un día especial para celebrar el amor.">
+  <title>Nuestra boda | Invitación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span data-initials>N & N</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#historia">Nuestra historia</a>
+      <a href="#itinerario">Itinerario</a>
+      <a href="#vestimenta">Vestimenta</a>
+      <a href="#lugares">Ubicación</a>
+      <a href="#regalos">Mesa de regalos</a>
+      <a href="#confirmacion" class="nav-rsvp">Confirmar asistencia</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero photo-panel" data-photo="portada" aria-label="Portada de la invitación">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow light">CON MUCHO AMOR, TE INVITAMOS A</span>
+        <p class="hero-script">Nuestra boda</p>
+        <h1><span data-name-a>Tu nombre</span><span class="ampersand">&</span><span data-name-b>Su nombre</span></h1>
+        <div class="hero-rule"><span>✦</span></div>
+        <p class="hero-date" data-wedding-date>FECHA POR CONFIRMAR</p>
+        <a href="#confirmacion" class="button button-light">CONFIRMAR ASISTENCIA</a>
+      </div>
+      <a class="scroll-cue" href="#bienvenida" aria-label="Desplazarse hacia abajo">↓</a>
+      <span class="photo-hint">Coloca tu foto en images/portada.jpg</span>
+    </section>
+
+    <section id="bienvenida" class="intro section-pad">
+      <span class="eyebrow">EL COMIENZO DE NUESTRA HISTORIA FAVORITA</span>
+      <div class="flourish" aria-hidden="true">✧ ❦ ✧</div>
+      <h2>El amor nos reunió,<br><em>y queremos celebrarlo contigo.</em></h2>
+      <p>Hay momentos que merecen compartirse con las personas que más queremos. Nos encantaría que formaras parte de este día inolvidable.</p>
+      <p class="signature" data-couple-signature>Tu nombre & Su nombre</p>
+    </section>
+
+    <section class="countdown-section section-pad" aria-labelledby="countdown-heading">
+      <span class="eyebrow">PARA NUESTRO GRAN DÍA</span>
+      <h2 id="countdown-heading" class="script-title">Faltan...</h2>
+      <div class="countdown" role="timer" aria-label="Cuenta regresiva para la boda">
+        <div><strong id="days">00</strong><span>DÍAS</span></div>
+        <div><strong id="hours">00</strong><span>HORAS</span></div>
+        <div><strong id="minutes">00</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+      </div>
+      <p id="countdown-message" class="small-note">Estamos contando los días para verte.</p>
+    </section>
+
+    <section id="historia" class="story section-pad">
+      <div class="story-image photo-panel" data-photo="historia">
+        <span class="photo-hint">Coloca tu foto en images/historia.jpg</span>
+      </div>
+      <div class="story-copy">
+        <span class="eyebrow">CADA AMOR TIENE SU HISTORIA</span>
+        <h2 class="section-heading">Nuestra <em>historia</em></h2>
+        <div class="small-rule"></div>
+        <p>Todo comenzó con un encuentro que terminó convirtiéndose en nuestra aventura favorita.</p>
+        <p>Después de tantos recuerdos, sueños y momentos compartidos, hoy queremos escribir un nuevo capítulo rodeados de nuestra familia y amigos.</p>
+        <p class="handwritten">Lo mejor está por venir...</p>
+      </div>
+    </section>
+
+    <section id="itinerario" class="schedule section-pad">
+      <span class="eyebrow">UN DÍA PARA RECORDAR</span>
+      <h2 class="section-heading">El <em>gran día</em></h2>
+      <p class="section-intro">Nos reuniremos para disfrutar una tarde y noche llenas de alegría, amor y momentos inolvidables.</p>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-icon">✿</span><time>18:00</time><div><h3>Recepción</h3><p>¡Es momento de celebrar!</p></div></article>
+        <article class="timeline-item"><span class="timeline-icon">✧</span><time>19:00</time><div><h3>Cena</h3><p>Compartamos una noche especial.</p></div></article>
+        <article class="timeline-item"><span class="timeline-icon">♫</span><time>21:00</time><div><h3>Baile</h3><p>¡Que nunca falte la música!</p></div></article>
+      </div>
+    </section>
+
+    <section id="vestimenta" class="dress section-pad">
+      <span class="eyebrow">CÓDIGO DE VESTIMENTA</span>
+      <h2 class="section-heading">Los <em>detalles</em></h2>
+      <p class="dress-script">Una ocasión especial</p>
+      <p class="dress-intro">Te esperamos con <strong>vestimenta formal</strong>. Aquí encontrarás inspiración para elegir tu look.</p>
+      <div class="dress-carousels">
+        <div class="dress-look">
+          <h3>Mujeres</h3>
+          <p>Inspiración de vestimenta formal</p>
+          <div class="carousel" data-carousel="mujeres" aria-label="Carrusel de inspiración para mujeres">
+            <div class="carousel-stage" data-carousel-stage><div class="carousel-placeholder">Fotografías por agregar</div></div>
+            <button type="button" class="carousel-arrow carousel-prev" data-carousel-prev aria-label="Foto anterior para mujeres">‹</button>
+            <button type="button" class="carousel-arrow carousel-next" data-carousel-next aria-label="Foto siguiente para mujeres">›</button>
+          </div>
+          <div class="carousel-dots" data-carousel-dots="mujeres" aria-label="Elegir fotografía de mujeres"></div>
+        </div>
+        <div class="dress-look">
+          <h3>Hombres</h3>
+          <p>Inspiración de vestimenta formal</p>
+          <div class="carousel" data-carousel="hombres" aria-label="Carrusel de inspiración para hombres">
+            <div class="carousel-stage" data-carousel-stage><div class="carousel-placeholder">Fotografías por agregar</div></div>
+            <button type="button" class="carousel-arrow carousel-prev" data-carousel-prev aria-label="Foto anterior para hombres">‹</button>
+            <button type="button" class="carousel-arrow carousel-next" data-carousel-next aria-label="Foto siguiente para hombres">›</button>
+          </div>
+          <div class="carousel-dots" data-carousel-dots="hombres" aria-label="Elegir fotografía de hombres"></div>
+        </div>
+      </div>
+      <div class="reserved-colors">
+        <span class="eyebrow">UNA PEQUEÑA CONSIDERACIÓN</span>
+        <h3>Colores reservados</h3>
+        <p>Para que todos luzcamos increíbles, les pedimos evitar los siguientes tonos:</p>
+        <div id="reserved-color-list" class="reserved-color-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="lugares" class="venues section-pad">
+      <span class="eyebrow">DÓNDE CELEBRAREMOS</span>
+      <h2 class="section-heading">El lugar de nuestra <em>celebración</em></h2>
+      <div class="venue-single">
+        <div class="carousel venue-carousel" data-carousel="lugar" aria-label="Fotografías del lugar de recepción">
+          <div class="carousel-stage" data-carousel-stage><div class="carousel-placeholder">Fotografías del lugar por agregar</div></div>
+          <button type="button" class="carousel-arrow carousel-prev" data-carousel-prev aria-label="Fotografía anterior del lugar">‹</button>
+          <button type="button" class="carousel-arrow carousel-next" data-carousel-next aria-label="Fotografía siguiente del lugar">›</button>
+        </div>
+        <div class="carousel-dots venue-dots" data-carousel-dots="lugar" aria-label="Elegir fotografía de recepción"></div>
+        <div class="venue-body">
+          <span class="eyebrow">NOS VEMOS EN LA FIESTA</span>
+          <h3>Recepción</h3>
+          <p id="reception-name">Lugar por confirmar</p>
+          <p id="reception-address" class="address">Dirección por confirmar</p>
+          <a id="reception-map" class="text-link" href="#" target="_blank" rel="noopener noreferrer" hidden>VER UBICACIÓN EN GOOGLE MAPS ↗</a>
+        </div>
+      </div>
+      <div class="calendar-panel">
+        <span class="eyebrow">GUARDA LA FECHA</span>
+        <p id="calendar-date-label" class="calendar-date-label">29 de enero de 2027 · 2:00 p. m.</p>
+        <button type="button" id="calendar-btn" class="button button-outline">AGREGAR RECORDATORIO AL CALENDARIO</button>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery section-pad">
+      <span class="eyebrow">MOMENTOS QUE ATESORAMOS</span>
+      <h2 class="section-heading">Nuestra <em>galería</em></h2>
+      <p class="section-intro">Un pequeño vistazo a los recuerdos que nos trajeron hasta aquí.</p>
+      <div class="gallery-grid">
+        <button type="button" class="gallery-tile photo-panel" data-photo="galeria-1" aria-label="Ver foto 1"><span class="photo-hint">Foto 1</span></button>
+        <button type="button" class="gallery-tile photo-panel" data-photo="galeria-2" aria-label="Ver foto 2"><span class="photo-hint">Foto 2</span></button>
+        <button type="button" class="gallery-tile photo-panel" data-photo="galeria-3" aria-label="Ver foto 3"><span class="photo-hint">Foto 3</span></button>
+        <button type="button" class="gallery-tile photo-panel" data-photo="galeria-4" aria-label="Ver foto 4"><span class="photo-hint">Foto 4</span></button>
+        <button type="button" class="gallery-tile photo-panel" data-photo="galeria-5" aria-label="Ver foto 5"><span class="photo-hint">Foto 5</span></button>
+        <button type="button" class="gallery-tile photo-panel" data-photo="galeria-6" aria-label="Ver foto 6"><span class="photo-hint">Foto 6</span></button>
+      </div>
+    </section>
+
+    <section id="regalos" class="gifts section-pad">
+      <span class="eyebrow">UN DETALLE CON AMOR</span>
+      <div class="gifts-illustration" aria-hidden="true">♡</div>
+      <h2 class="section-heading">Mesa de <em>regalos</em></h2>
+      <p class="section-intro">Su presencia es nuestro regalo más especial. Si desean obsequiarnos un detalle, hemos preparado estas opciones con mucho cariño para comenzar nuestra nueva historia juntos.</p>
+      <div class="gift-links">
+        <a class="gift-store" id="gift-liverpool" href="https://mesaderegalos.liverpool.com.mx/eventodebusqueda" target="_blank" rel="noopener noreferrer" aria-label="Visitar la mesa de regalos en Liverpool">
+          <img src="logos/liverpool.svg" alt="Liverpool" width="230" height="66">
+          <span>VER MESA DE REGALOS ↗</span>
+        </a>
+        <a class="gift-store" id="gift-amazon" href="https://www.amazon.com.mx/wedding" target="_blank" rel="noopener noreferrer" aria-label="Visitar la mesa de regalos en Amazon">
+          <img src="logos/amazon.svg" alt="Amazon" width="230" height="66">
+          <span>VER MESA DE REGALOS ↗</span>
+        </a>
+      </div>
+      <p class="gift-thanks">¡Gracias por formar parte de nuestra historia!</p>
+    </section>
+
+    <section id="confirmacion" class="rsvp section-pad">
+      <div class="rsvp-card">
+        <span class="eyebrow">SERÁ UN HONOR CONTAR CONTIGO</span>
+        <h2 class="script-title">¿Nos acompañas?</h2>
+        <p>Confirma tu asistencia; tu respuesta quedará registrada para ayudarnos a organizar este día especial.</p>
+        <form id="rsvp-form">
+          <label for="guest-name">Tu nombre completo</label>
+          <input id="guest-name" name="guestName" type="text" placeholder="Nombre y apellido" autocomplete="name" required maxlength="100">
+          <fieldset>
+            <legend>¿Asistirás a nuestra boda?</legend>
+            <div class="radio-row">
+              <label><input type="radio" name="attendance" value="Sí, asistiré" required> ¡Sí, asistiré!</label>
+              <label><input type="radio" name="attendance" value="No podré asistir"> No podré asistir</label>
+            </div>
+          </fieldset>
+          <label for="guest-message">Mensaje para los novios (opcional)</label>
+          <textarea id="guest-message" name="message" rows="3" maxlength="500" placeholder="Escribe algo bonito..."></textarea>
+          <input type="hidden" name="requestId" id="rsvp-request-id" value="">
+          <div class="rsvp-honey" aria-hidden="true"><label for="rsvp-website">No completar este campo</label><input id="rsvp-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <button type="submit" id="rsvp-submit" class="button button-wine">ENVIAR CONFIRMACIÓN</button>
+          <p id="rsvp-status" class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-disclaimer">Tus datos se utilizarán únicamente para administrar las confirmaciones de esta celebración.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer-initials" data-initials>N & N</span>
+    <p>Con amor, <span data-couple-signature>Tu nombre & Su nombre</span></p>
+    <span data-wedding-date>FECHA POR CONFIRMAR</span>
+    <p class="footer-bottom">Hecho con amor · <span id="year"></span></p>
+  </footer>
+
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Fotografía ampliada">
+    <button type="button" id="close-dialog" class="dialog-close" aria-label="Cerrar fotografía">×</button>
+    <img id="dialog-image" src="" alt="Fotografía de la pareja">
+  </dialog>
+</body>
+</html>
