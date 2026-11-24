@@ -496,3 +496,97 @@ weddingAudio.addEventListener(
 
 // Estado inicial
 updateMusicUI();
+
+
+/* =====================================
+   POPUP MUSICAL DE BIENVENIDA
+===================================== */
+
+const welcomePopup = document.getElementById(
+  "music-welcome"
+);
+
+const welcomeYes = document.getElementById(
+  "music-welcome-yes"
+);
+
+const welcomeNo = document.getElementById(
+  "music-welcome-no"
+);
+
+// Bloquear la página hasta elegir una opción
+const previousOverflow = document.body.style.overflow;
+
+const blockedElements = [
+  ...document.body.children
+].filter(element =>
+  element !== welcomePopup &&
+  element.tagName !== "SCRIPT"
+);
+
+const previousInert = blockedElements.map(
+  element => element.inert
+);
+
+blockedElements.forEach(element => {
+  element.inert = true;
+});
+
+document.body.style.overflow = "hidden";
+
+welcomeYes.focus();
+
+// Mantener el teclado dentro del popup
+welcomePopup.addEventListener("keydown", event => {
+  if (event.key === "Tab") {
+    const buttons = [welcomeYes, welcomeNo];
+    const current = buttons.indexOf(document.activeElement);
+
+    if (event.shiftKey && current === 0) {
+      event.preventDefault();
+      welcomeNo.focus();
+    } else if (!event.shiftKey && current === 1) {
+      event.preventDefault();
+      welcomeYes.focus();
+    }
+  }
+});
+
+// Cerrar ventana y desbloquear página
+function closeMusicWelcome() {
+  welcomePopup.hidden = true;
+  document.body.style.overflow = previousOverflow;
+
+  blockedElements.forEach((element, index) => {
+    element.inert = previousInert[index];
+  });
+
+  musicToggle.focus();
+}
+
+// Sí: reproducir música
+welcomeYes.addEventListener("click", async () => {
+
+  // Iniciar dentro del clic para permitir audio
+  const playPromise = weddingAudio.play();
+
+  closeMusicWelcome();
+
+  try {
+    await playPromise;
+  } catch (error) {
+    console.error("No se pudo reproducir:", error);
+  }
+
+  updateMusicUI();
+});
+
+// No: continuar sin música
+welcomeNo.addEventListener("click", () => {
+
+  weddingAudio.pause();
+
+  closeMusicWelcome();
+  updateMusicUI();
+
+});
