@@ -408,3 +408,91 @@ rsvpForm.addEventListener("submit", async event => {
     rsvpButton.disabled = false;
   }
 });
+
+
+/* =====================================
+   REPRODUCTOR MUSICAL DE LA BODA
+===================================== */
+
+const weddingAudio = document.getElementById(
+  "wedding-audio"
+);
+
+const musicToggle = document.getElementById(
+  "music-toggle"
+);
+
+const musicControl = document.getElementById(
+  "music-control"
+);
+
+// Actualiza botón y animación
+function updateMusicUI() {
+
+  const playing = !weddingAudio.paused;
+
+  musicControl.classList.toggle(
+    "is-playing",
+    playing
+  );
+
+  musicToggle.setAttribute(
+    "aria-pressed",
+    String(playing)
+  );
+
+  musicToggle.setAttribute(
+    "aria-label",
+    playing ? "Pausar música" : "Reproducir música"
+  );
+
+  musicToggle.title = playing
+    ? "Pausar música"
+    : "Reproducir música";
+}
+
+// Reproducir o pausar
+musicToggle.addEventListener("click", async () => {
+
+  if (weddingAudio.paused) {
+
+    try {
+      await weddingAudio.play();
+    } catch (error) {
+      console.error(
+        "No se pudo reproducir la canción:",
+        error
+      );
+
+      alert(
+        "No se pudo reproducir la música. " +
+        "Verifica el archivo audio/cancion.mp3"
+      );
+    }
+
+  } else {
+    weddingAudio.pause();
+  }
+
+  updateMusicUI();
+
+});
+
+// Detectar reproducción y pausa
+weddingAudio.addEventListener(
+  "play",
+  updateMusicUI
+);
+
+weddingAudio.addEventListener(
+  "pause",
+  updateMusicUI
+);
+
+weddingAudio.addEventListener(
+  "ended",
+  updateMusicUI
+);
+
+// Estado inicial
+updateMusicUI();

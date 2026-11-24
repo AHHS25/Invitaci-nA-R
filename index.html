@@ -14,7 +14,53 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span data-initials>N & N</span></a>
+
+<!-- INICIALES Y REPRODUCTOR MUSICAL -->
+<div class="header-brand-music">
+
+  <a class="brand" href="#inicio" aria-label="Ir al inicio">
+    <span data-initials>A & R</span>
+  </a>
+
+  <div class="music-control" id="music-control">
+
+    <!-- Botón Play / Pausa -->
+    <button
+      type="button"
+      id="music-toggle"
+      class="music-toggle"
+      aria-label="Reproducir música"
+      aria-pressed="false"
+      title="Reproducir música"
+    >
+      <svg class="music-icon-play" viewBox="0 0 24 24"
+           aria-hidden="true">
+        <path d="M7 4.5v15l12-7.5z"/>
+      </svg>
+
+      <svg class="music-icon-pause" viewBox="0 0 24 24"
+           aria-hidden="true">
+        <path d="M6 4h4v16H6zM14 4h4v16h-4z"/>
+      </svg>
+    </button>
+
+    <!-- Barras musicales animadas -->
+    <span class="music-equalizer" aria-hidden="true">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+
+  </div>
+
+</div>
+
+<!-- ARCHIVO DE AUDIO -->
+<audio id="wedding-audio" preload="none" loop>
+  <source src="audio/cancion.mp3" type="audio/mpeg">
+</audio>
     <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">☰</button>
     <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
       <a href="#historia">Nuestra historia</a>
