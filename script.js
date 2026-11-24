@@ -5,8 +5,8 @@
 const wedding = {
   nombre1: "Anaeli Millar",        // EDITABLE
   nombre2: "Ruben Carrizalez",     // EDITABLE
-  // La fiesta comienza a las 18:00 del 29 de enero de 2027 (Ciudad de México).
-  fecha: "2027-01-29T18:00:00-06:00",
+  // La fiesta comienza a las 17:30 del 30 de enero de 2027 (Ciudad de México).
+  fecha: "2027-01-30T17:30:00-06:00",
   // El botón de calendario genera un recordatorio a las 14:00.
   recordatorio: "2027-01-29T14:00:00-06:00",
   recepcion: {
