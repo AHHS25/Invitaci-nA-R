@@ -8,7 +8,7 @@ const wedding = {
   // La fiesta comienza a las 18:00 del 29 de enero de 2027 (Ciudad de México).
   fecha: "2027-01-29T18:00:00-06:00",
   // El botón de calendario genera un recordatorio a las 14:00.
-  recordatorio: "2027-01-29T14:00:00-06:00",
+  recordatorio: "2027-01-30T14:00:00-06:00",
   recepcion: {
     nombre: "Lugar por confirmar",
     direccion: "",                 // Ej.: "Calle Ejemplo 123, CDMX, México"
@@ -31,7 +31,7 @@ const wedding = {
   ],
   // Pega aquí la URL de implementación de Google Apps Script terminada en /exec.
   // Ver INSTRUCCIONES.md y google-sheets/Code.gs.
-  googleSheetsWebApp: ""
+  googleSheetsWebApp: "https://script.google.com/macros/s/AKfycbyObt9HCzq-mnFxhglfvOXHyZXPWZe9co02lFEjmp-mlc6hCg1bJIsAdc9rGscbX2QP/exec"
 };
 
 /* =============================================================
