@@ -8,7 +8,7 @@ const wedding = {
   // La fiesta comienza a las 18:00 del 29 de enero de 2027 (Ciudad de México).
   fecha: "2027-01-29T18:00:00-06:00",
   // El botón de calendario genera un recordatorio a las 14:00.
-  recordatorio: "2027-01-30T14:00:00-06:00",
+  recordatorio: "2027-01-29T14:00:00-06:00",
   recepcion: {
     nombre: "Lugar por confirmar",
     direccion: "",                 // Ej.: "Calle Ejemplo 123, CDMX, México"
