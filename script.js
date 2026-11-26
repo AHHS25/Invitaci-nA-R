@@ -73,7 +73,13 @@ document.querySelectorAll("[data-name-b]").forEach(el => { el.textContent = wedd
 document.querySelectorAll("[data-initials]").forEach(el => { el.textContent = initials; });
 document.querySelectorAll("[data-couple-signature]").forEach(el => { el.textContent = signature; });
 document.querySelectorAll("[data-wedding-date]").forEach(el => { el.textContent = prettyDate; });
-document.getElementById("year").textContent = new Date().getFullYear();
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
+
 document.title = `${signature} | Nuestra boda`;
 
 /* Menú para celulares. */
