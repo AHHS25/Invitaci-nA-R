@@ -650,3 +650,30 @@ img { display: block; max-width: 100%; }
   object-fit: contain;
   object-position: center center;
 }
+
+
+/* Créditos del creador de la página */
+
+.footer-credit {
+  color: #F5E9E9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-credit a {
+  color: #E6C25A;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.footer-credit a:focus-visible {
+  outline: 2px solid #E6C25A;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
