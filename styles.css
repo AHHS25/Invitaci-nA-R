@@ -624,3 +624,29 @@ img { display: block; max-width: 100%; }
     animation: none;
   }
 }
+
+
+/* =====================================
+   CORRECCIÓN DE IMÁGENES DE VESTIMENTA
+   MUJERES Y HOMBRES
+===================================== */
+
+/* Proporción vertical de las ilustraciones */
+.dress-carousels .carousel-stage {
+  aspect-ratio: 2 / 3;
+  background: #FFFFFF;
+}
+
+/* Eliminar el fondo verde */
+.dress-carousels .carousel-slide {
+  background: #FFFFFF;
+}
+
+/* Mostrar las ilustraciones completas */
+.dress-carousels .carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
