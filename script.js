@@ -10,9 +10,9 @@ const wedding = {
   // El botón de calendario genera un recordatorio a las 14:00.
   recordatorio: "2027-01-29T14:00:00-06:00",
   recepcion: {
-    nombre: "Lugar por confirmar",
-    direccion: "",                 // Ej.: "Calle Ejemplo 123, CDMX, México"
-    mapa: ""                       // Opcional: pega un enlace directo de Google Maps
+    nombre: "La Vista Tepepan",
+    direccion: "Cda. Av. de Las Torres s/n, Santa María Tepepan, Xochimilco, 16020 Ciudad de México, CDMX, México",
+    mapa: "https://www.google.com/maps/search/?api=1&query=La%20Vista%20Tepepan%2C%20Xochimilco%2C%20CDMX&query_place_id=ChIJUV-ONRgBzoURTreulIqKDhc"
   },
   mesasDeRegalos: {
     // Pega aquí los enlaces ESPECÍFICOS de los novios cuando los tengan.
