@@ -18,7 +18,7 @@ const wedding = {
     // Pega aquí los enlaces ESPECÍFICOS de los novios cuando los tengan.
     // Mientras tanto, se abren los portales generales de mesas de regalos.
     liverpool: "https://mesaderegalos.liverpool.com.mx/milistaderegalos/60063941",
-    amazon: "https://www.amazon.com.mx/wedding"
+    amazon: "https://www.amazon.com.mx/wedding/guest-view/7Q3ROWBK1B1C"
   },
   // Como todavía no se indicaron colores prohibidos, NO inventamos ninguno.
   // Ejemplo para más adelante: { nombre: "Blanco", color: "#FFFFFF" }
