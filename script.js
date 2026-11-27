@@ -3,8 +3,8 @@
    Cambia únicamente estos datos cuando tengas la información.
    ============================================================= */
 const wedding = {
-  nombre1: "Anaeli Millar",        // EDITABLE
-  nombre2: "Ruben Carrizalez",     // EDITABLE
+  nombre1: "Anaeli Miliar",        // EDITABLE
+  nombre2: "Ruben Carrizales",     // EDITABLE
   // La fiesta comienza a las 17:30 del 30 de enero de 2027 (Ciudad de México).
   fecha: "2027-01-30T17:30:00-06:00",
   // El botón de calendario genera un recordatorio a las 14:00.
